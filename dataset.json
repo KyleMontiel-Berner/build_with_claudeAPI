@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that extracts the AWS account ID from an IAM ARN string like 'arn:aws:iam::123456789012:user/john-doe'"
+  },
+  {
+    "task": "Create a JSON CloudFormation template snippet that defines an S3 bucket with versioning enabled and public access blocked"
+  },
+  {
+    "task": "Write a regular expression pattern that matches valid AWS EC2 security group IDs in the format 'sg-' followed by 8 or 17 hexadecimal characters"
+  }
+]

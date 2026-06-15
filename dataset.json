@@ -1,11 +1,11 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS account ID from an IAM ARN string like 'arn:aws:iam::123456789012:user/john-doe'"
+    "task": "Write a Python function that validates an AWS S3 bucket name according to AWS naming rules (3-63 characters, lowercase letters, numbers, hyphens only, must start and end with letter or number)"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an S3 bucket with versioning enabled and public access blocked"
+    "task": "Create a JSON policy document for an AWS IAM role that allows read-only access to a specific S3 bucket named 'my-data-bucket'"
   },
   {
-    "task": "Write a regular expression pattern that matches valid AWS EC2 security group IDs in the format 'sg-' followed by 8 or 17 hexadecimal characters"
+    "task": "Write a regular expression that matches valid AWS IAM usernames (1-64 characters, alphanumeric plus =,.@-)"
   }
 ]

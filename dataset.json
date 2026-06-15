@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that validates an AWS S3 bucket name according to AWS naming rules (3-63 characters, lowercase letters, numbers, hyphens only, must start and end with letter or number)"
+    "task": "Extract the AWS region from an S3 bucket ARN (e.g., 'arn:aws:s3:::my-bucket-us-east-1')",
+    "format": "regex",
+    "solutionCriteria": "Should correctly extract region codes like 'us-east-1', 'eu-west-1', or handle cases where region is not present in the ARN"
   },
   {
-    "task": "Create a JSON policy document for an AWS IAM role that allows read-only access to a specific S3 bucket named 'my-data-bucket'"
+    "task": "Create a JSON policy document that allows read-only access to a specific S3 bucket",
+    "format": "json",
+    "solutionCriteria": "Should include proper AWS policy structure with Effect, Action, Resource, and Principal fields; actions should be limited to s3:GetObject and s3:ListBucket"
   },
   {
-    "task": "Write a regular expression that matches valid AWS IAM usernames (1-64 characters, alphanumeric plus =,.@-)"
+    "task": "Write a JavaScript function that validates if a string is a valid AWS Lambda function name (must start with letter/number, contain only alphanumeric and hyphens, 1-64 characters)",
+    "format": "javascript",
+    "solutionCriteria": "Should return boolean; correctly reject names with invalid characters, length violations, or invalid starting characters; accept valid names like 'my-function' and 'MyFunction123'"
   }
 ]

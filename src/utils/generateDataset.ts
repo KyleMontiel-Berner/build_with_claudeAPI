@@ -7,7 +7,11 @@ import {
 import { prompt } from "../evals/prompts";
 import { z } from "zod";
 
-const EvalTaskSchema = z.object({ task: z.string() });
+const EvalTaskSchema = z.object({
+  task: z.string(),
+  format: z.enum(["javascript", "json", "regex"]),
+  solutionCriteria: z.string(),
+});
 export const DatasetSchema = z.array(EvalTaskSchema);
 export type EvalTask = z.infer<typeof EvalTaskSchema>;
 
